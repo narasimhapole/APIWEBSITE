@@ -1,0 +1,104 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f6fa;
+    color: #333;
+  }
+  
+  /* Header Styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #2f3640;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .link {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  .link:hover {
+    color: #00a8ff;
+  }
+  
+  /* All Styles */
+  .all {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .all p {
+    font-size: 24px;
+    color: #2f3640;
+  }
+  
+  /* Button Styles */
+  button, .rm a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 20px auto;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  button {
+    background-color: #e84118;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #c23616;
+  }
+  
+  .rm a {
+    background-color: transparent;
+    color: #0097e6;
+    border: 2px solid #0097e6;
+    font-weight: bold;
+  }
+  
+  .rm a:hover {
+    background-color: #0097e6;
+    color: white;
+  }
+  
+  /* Media Query for Mobile Devices */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .links {
+      margin-top: 10px;
+    }
+  
+    .rm a, button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
